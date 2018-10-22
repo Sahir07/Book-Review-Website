@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block heading %}
+  Welcome to Book Review Website
+{% endblock %}
+
+{% block body %}
+    <h2>SIGN UP:</h2>
+    <!-- The <form></form> tag contain code for displaying the registration form-->
+    {% from "includes/_formhelpers.html" import render_field %}
+    <form method="post" action="">
+        <div class="form-group">
+            {{render_field(form.email, class="form-control")}}
+        </div>
+        <div class="form-group">
+            {{render_field(form.password, class="form-control")}}
+        </div>
+        <div class="form-group">
+            {{render_field(form.confirm, class="form-control")}}
+        </div>
+        <p><input type="submit" class="btn btn-primary" value="submit"></p>
+    </form>
+    <a href="{{ url_for('Login_Page') }}">Already a member! LOGIN </a>
+{% endblock %}
