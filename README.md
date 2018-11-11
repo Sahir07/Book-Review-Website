@@ -1,3 +1,3 @@
-# Project 1
+# Book Review Website
 
-Web Programming with Python and JavaScript
+Web Programming with Python and Flask.
