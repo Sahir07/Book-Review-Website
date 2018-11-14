@@ -25,7 +25,7 @@ Session(app)
 #engine = create_engine(os.getenv("DATABASE_URL"))#postgresql://localhost:5432/postgres
 #db = scoped_session(sessionmaker(bind=engine))
 
-conn = psycopg2.connect("host=localhost dbname=postgres user=postgres password=raghuram771231")
+conn = psycopg2.connect("host=localhost dbname=postgres user=postgres password=raghuram")
 
 
 # initially opens up the registration page after the flask is run
